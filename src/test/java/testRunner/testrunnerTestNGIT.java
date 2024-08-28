@@ -5,6 +5,6 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = "src/test/resources/features", glue = "steps",
 tags="@Gmail")
-public class testrunnerTestNG extends AbstractTestNGCucumberTests {
+public class testrunnerTestNGIT extends AbstractTestNGCucumberTests {
 
 }

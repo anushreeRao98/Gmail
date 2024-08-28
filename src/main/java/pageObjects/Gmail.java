@@ -3,13 +3,11 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Gmail {
@@ -47,14 +45,12 @@ public class Gmail {
 
     public void enterEmailId(String emailId) {
         driver.findElement(By.xpath("//input[@type='email']")).sendKeys(emailId);
-        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
     }
 
     public void enterPassword(String password) {
 
         driver.findElement(By.xpath("//div[@id='password']//input")).sendKeys(password);
-        driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
     }
 
     public void searchForEmail(String contentToSearch) {
